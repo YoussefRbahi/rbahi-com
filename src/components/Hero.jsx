@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import ScrollDown from "./ScrollDown";
 function Hero({ className }) {
   const titles = [
     "frontend engineer",
@@ -35,6 +36,11 @@ function Hero({ className }) {
               <span className="text-primary ">&nbsp;{titles[titleIndex]}</span>.
             </p>
           </h1>
+        </div>
+        <div className=" absolute left-1/2 -translate-x-1/2 bottom-0 mb-20">
+          <a href="#">
+            <ScrollDown></ScrollDown>
+          </a>
         </div>
       </div>
     </div>
