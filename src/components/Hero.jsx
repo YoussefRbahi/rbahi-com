@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import LocationInfo from "./LocationInfo";
 import ScrollDown from "./ScrollDown";
 function Hero({ className }) {
   const titles = [
@@ -26,6 +27,7 @@ function Hero({ className }) {
 
   return (
     <div className={`${className} grid   h-svh relative`}>
+      <LocationInfo className="absolute m-4 top-0 end-0 text-3xl "></LocationInfo>
 
       <div className="grid h-full text-center">
         <div className="m-auto">
