@@ -16,7 +16,7 @@ function Hero({ className }) {
     }, 2000); // Change title every 2s seconds
 
     return () => clearInterval(interval); // Cleanup interval on component unmount
-  }, [titles.length]);
+  });
   const getArticle = (title) => {
     if (title[0] === title[0].toUpperCase()) {
       return "An";
