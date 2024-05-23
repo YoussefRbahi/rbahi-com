@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import LocationInfo from "./LocationInfo";
+import Time from "./Time";
 import ScrollDown from "./ScrollDown";
-function Hero({ className }) {
+function Hero({ className, locationData }) {
   const titles = [
     "frontend engineer",
     "react developer",
@@ -27,7 +27,11 @@ function Hero({ className }) {
 
   return (
     <div className={`${className} grid   h-svh relative`}>
-      <LocationInfo className="absolute m-4 top-0 end-0 text-3xl "></LocationInfo>
+      <div className="absolute m-4 top-0 end-0 text-3xl ">
+        <p>
+          <Time locationData={locationData} /> - {locationData.location}
+        </p>
+      </div>
 
       <div className="grid h-full text-center">
         <div className="m-auto">
