@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-function Time({ locationData }) {
+function Time({ locationData, showSeconds = true }) {
   const [time, setTime] = useState("00:00:00");
 
   useEffect(() => {
@@ -11,7 +11,7 @@ function Time({ locationData }) {
         timeZone: locationData.timezone,
         hour: "2-digit",
         minute: "2-digit",
-        second: "2-digit",
+        ...(showSeconds && { second: "2-digit" }),
       };
       setTime(new Intl.DateTimeFormat("en-GB", options).format(now));
     };

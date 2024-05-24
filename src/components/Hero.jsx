@@ -33,11 +33,7 @@ function Hero({ className, locationData }) {
         <Weather locationData={locationData} />
       </div>
       <div className="absolute m-6 top-0 end-0 text-5xl ">
-    <div className={`${className} grid   h-svh relative`}>
-      <div className="absolute m-4 top-0 end-0 text-3xl ">
-        <p>
-          <Time locationData={locationData} /> - {locationData.location}
-        </p>
+        <Time locationData={locationData} showSeconds={false} />
       </div>
 
       <div className="grid h-full text-center">
