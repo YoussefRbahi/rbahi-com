@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Time from "./Time";
+import Weather from "./Weather";
 import ScrollDown from "./ScrollDown";
 function Hero({ className, locationData }) {
   const titles = [
@@ -26,6 +27,12 @@ function Hero({ className, locationData }) {
   };
 
   return (
+    <div className={`${className} grid h-svh relative`}>
+      <div className="absolute m-6 top-0 start-0 text-3xl ">
+        <p>{locationData.location}</p>
+        <Weather locationData={locationData} />
+      </div>
+      <div className="absolute m-6 top-0 end-0 text-5xl ">
     <div className={`${className} grid   h-svh relative`}>
       <div className="absolute m-4 top-0 end-0 text-3xl ">
         <p>
