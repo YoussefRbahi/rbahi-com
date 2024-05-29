@@ -8,6 +8,7 @@ function Hero({ className, userData }) {
     "react developer",
     "SEO expert",
     "const > let guy",
+    "typography nerd",
     "trivia champion",
   ];
   const [titleIndex, setTitleIndex] = useState(0);
