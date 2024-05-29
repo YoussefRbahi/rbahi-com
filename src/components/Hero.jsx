@@ -29,13 +29,13 @@ function Hero({ className, userData }) {
 
   return (
     <div className={`${className} grid h-svh relative`}>
-      <div className="absolute m-6 top-0 start-0 text-3xl ">
+      <div className="absolute  top-0 start-0 text-3xl ">
         <p>
           {userData.location.region}, {userData.location.country}
         </p>
         <Weather userData={userData} />
       </div>
-      <div className="absolute m-6 top-0 end-0 text-5xl ">
+      <div className="absolute  top-0 end-0 text-5xl ">
         <Time userData={userData} showSeconds={false} />
       </div>
 
