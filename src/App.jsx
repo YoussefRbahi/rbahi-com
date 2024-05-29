@@ -1,6 +1,7 @@
 import Hero from "./components/Hero";
 import { useState, useEffect } from "react";
 import { fetchUserIP } from "./api/fetchUserIP";
+import Profile from "./components/Profile";
 import "./App.css";
 function App() {
   // Initialize with default location data in case the fetch fails
@@ -57,6 +58,9 @@ function App() {
         <div className="gradient-bg h-screen overflow-hidden"></div>
         <div className="grid snap-center h-screen ">
           <Hero className="relative m-6" userData={userData} />
+        </div>
+        <div id="main-section" className="grid snap-center h-screen ">
+          <Profile />
         </div>
       </div>
     </>
