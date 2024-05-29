@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Time from "./Time";
 import Weather from "./Weather";
 import ScrollDown from "./ScrollDown";
-function Hero({ className, locationData }) {
+function Hero({ className, userData }) {
   const titles = [
     "frontend engineer",
     "react developer",
@@ -29,11 +29,13 @@ function Hero({ className, locationData }) {
   return (
     <div className={`${className} grid h-svh relative`}>
       <div className="absolute m-6 top-0 start-0 text-3xl ">
-        <p>{locationData.location}</p>
-        <Weather locationData={locationData} />
+        <p>
+          {userData.location.region}, {userData.location.country}
+        </p>
+        <Weather userData={userData} />
       </div>
       <div className="absolute m-6 top-0 end-0 text-5xl ">
-        <Time locationData={locationData} showSeconds={false} />
+        <Time userData={userData} showSeconds={false} />
       </div>
 
       <div className="grid h-full text-center">

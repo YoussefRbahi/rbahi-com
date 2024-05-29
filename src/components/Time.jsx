@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-function Time({ locationData, showSeconds = true }) {
+function Time({ userData, showSeconds = true }) {
   const [time, setTime] = useState("00:00:00");
 
   useEffect(() => {
@@ -8,7 +8,7 @@ function Time({ locationData, showSeconds = true }) {
     const updateTime = () => {
       const now = new Date();
       const options = {
-        timeZone: locationData.timezone,
+        timeZone: userData.location.tz_id,
         hour: "2-digit",
         minute: "2-digit",
         ...(showSeconds && { second: "2-digit" }),
@@ -20,7 +20,7 @@ function Time({ locationData, showSeconds = true }) {
     updateTime();
     // Clean up interval
     return () => clearInterval(intervalId);
-  }, [locationData.timezone]);
+  }, [userData.location.tz_id]);
   return <>{time}</>;
 }
 export default Time;
