@@ -50,7 +50,15 @@ function Hero({ className, userData }) {
           </h1>
         </div>
         <div className=" absolute left-1/2 -translate-x-1/2 bottom-0 mb-20">
-          <a href="#">
+          <a
+            href="#main-section"
+            onClick={(e) => {
+              e.preventDefault();
+              document
+                .querySelector("#main-section")
+                .scrollIntoView({ behavior: "smooth" });
+            }}
+          >
             <ScrollDown></ScrollDown>
           </a>
         </div>
