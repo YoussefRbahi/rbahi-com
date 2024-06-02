@@ -10,6 +10,9 @@ export default {
         secondary: "#003049",
         "secondary-light": "#669BBC",
       },
+      fontFamily: {
+        sans: ["Rubik", "sans-serif"],
+      },
     },
   },
   plugins: [],
