@@ -11,7 +11,7 @@ export default {
         "secondary-light": "#669BBC",
       },
       fontFamily: {
-        sans: ["Rubik", "sans-serif"],
+        sans: ["Poppins", "sans-serif"],
       },
     },
   },
