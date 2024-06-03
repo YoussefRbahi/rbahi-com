@@ -1,23 +1,62 @@
 html {
   scroll-behavior: smooth;
 }
+@keyframes moveBackground {
+  0% {
+    background-position: 0% 0%;
+  }
+  12.5% {
+    background-position: 25% 25%;
+  }
+  25% {
+    background-position: 50% 50%;
+  }
+  37.5% {
+    background-position: 75% 75%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  62.5% {
+    background-position: 75% 50%;
+  }
+  75% {
+    background-position: 50% 100%;
+  }
+  87.5% {
+    background-position: 25% 75%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.gradient-bg {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+}
 .gradient-bg {
   background-repeat: no-repeat;
   position: fixed;
-  width: 100lvw;
-  height: 100lvh;
-  background-size: 100% 100%;
-
+  width: 100vw;
+  height: 100vh;
+  background-size: 200% 200%;
   z-index: -1;
-  position: fixed;
-  background-color: rgb(255, 255, 255);
+  background-color: #888888;
   background-image: radial-gradient(
       at 20% 75%,
       rgb(140, 166, 243) 0px,
       transparent 50%
     ),
-    radial-gradient(at 7% 42%, rgb(192, 194, 255) 0px, transparent 100%),
-    radial-gradient(at 84% 74%, rgb(240, 106, 106) 0px, transparent 50%),
-    radial-gradient(at 73% 8%, rgb(230, 101, 181) 0px, transparent 100%),
+    radial-gradient(at 7% 42%, rgb(150, 154, 255) 0px, transparent 50%),
+    radial-gradient(at 24% 74%, rgb(180, 194, 23) 0px, transparent 50%),
+    radial-gradient(at 73% 8%, #009688 0px, transparent 50%),
     radial-gradient(at 32% 9%, hsla(23, 91%, 71%, 1) 0px, transparent 50%);
+  animation: moveBackground 20s infinite alternate; /* Apply the animation */
+}
+.section-content h3 {
+  @apply text-3xl font-semibold;
 }
