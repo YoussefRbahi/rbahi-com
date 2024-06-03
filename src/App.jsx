@@ -1,8 +1,8 @@
 import Hero from "./components/Hero";
 import { useState, useEffect } from "react";
 import { fetchUserIP } from "./api/fetchUserIP";
-import Profile from "./components/Profile";
 import "./App.css";
+import MainPart from "./components/MainPart";
 function App() {
   // Initialize with default location data in case the fetch fails
   const [userData, setUserData] = useState({
@@ -54,13 +54,16 @@ function App() {
 
   return (
     <>
-      <div className="snap-y snap-mandatory h-screen w-screen max-w-screen overflow-y-auto  overflow-x-hidden text-slate-800 relative">
+      <div className="snap-y md:snap-mandatory snap-proximity h-screen w-screen max-w-screen overflow-y-auto  overflow-x-hidden text-slate-800 relative">
         <div className="gradient-bg h-screen overflow-hidden"></div>
-        <div className="grid snap-center h-screen ">
+        <div className="grid snap-start md:h-screen ">
           <Hero className="relative m-6" userData={userData} />
         </div>
-        <div id="main-section" className="grid snap-center h-screen ">
-          <Profile />
+        <div
+          id="main-section"
+          className=" grid snap-start min-h-screen px-6 md:px-60 text-left bg-primary text-lowcontrast font-light"
+        >
+          <MainPart />
         </div>
       </div>
     </>
