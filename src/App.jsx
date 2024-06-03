@@ -61,7 +61,7 @@ function App() {
         </div>
         <div
           id="main-section"
-          className=" grid snap-start min-h-screen px-6 md:px-60 text-left bg-primary text-lowcontrast font-light"
+          className=" grid snap-start mx-auto min-h-screen  px-6 py-12 md:px-12 md:py-20 lg:px-48 lg:py-0 text-left bg-primary text-lowcontrast font-light"
         >
           <MainPart />
         </div>
