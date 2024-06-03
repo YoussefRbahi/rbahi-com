@@ -55,8 +55,13 @@ html {
     radial-gradient(at 24% 74%, rgb(180, 194, 23) 0px, transparent 50%),
     radial-gradient(at 73% 8%, #009688 0px, transparent 50%),
     radial-gradient(at 32% 9%, hsla(23, 91%, 71%, 1) 0px, transparent 50%);
-  animation: moveBackground 20s infinite alternate; /* Apply the animation */
+  animation: moveBackground 20s infinite alternate;
+  transition-timing-function: ease-in-out;
 }
 .section-content h3 {
   @apply text-3xl font-semibold;
+}
+
+a {
+  @apply hover:text-highcontrast;
 }
