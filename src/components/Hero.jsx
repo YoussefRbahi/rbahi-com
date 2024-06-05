@@ -3,12 +3,14 @@ import Time from "./Time";
 import Weather from "./Weather";
 function Hero({ className, userData, unlockSite }) {
   const titles = [
-    "frontend engineer",
-    "React developer",
-    "SEO expert",
-    "const > let guy",
-    "typography nerd",
+    { role: "frontend engineer", article: "A" },
+    { role: "React developer", article: "A" },
+    { role: "UI/UX Designer", article: "A" },
+    { role: "SEO expert", article: "An" },
+    // { role: "const > let guy", article: "A" },
+    // { role: "typography nerd", article: "A" },
   ];
+
   const [titleIndex, setTitleIndex] = useState(0);
 
   useEffect(() => {
@@ -18,15 +20,6 @@ function Hero({ className, userData, unlockSite }) {
 
     return () => clearInterval(interval); // Cleanup interval on component unmount
   });
-  const getArticle = (title) => {
-    if (
-      title[0] === title[0].toUpperCase() &&
-      title[1] === title[1].toUpperCase()
-    ) {
-      return "An";
-    }
-    return "A";
-  };
 
   return (
     <div className={`${className} grid h-svh relative`}>
@@ -45,9 +38,9 @@ function Hero({ className, userData, unlockSite }) {
           <h1 className="text-7xl">
             <p>Hi. I&apos;m Youssef.</p>
             <p>
-              {getArticle(titles[titleIndex])}
+              {titles[titleIndex].article}
               <span className="text-highcontrast ">
-                &nbsp;{titles[titleIndex]}
+                &nbsp;{titles[titleIndex].role}
               </span>
               .
             </p>
