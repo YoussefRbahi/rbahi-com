@@ -60,10 +60,7 @@ function App() {
   return (
     <>
       <div className="h-screen max-h-screen text-white">
-        <div
-          style={{ backgroundColor: "#910022" }}
-          className="fixed top-0 left-0 -z-50 h-full w-full"
-        ></div>
+        <div className="fixed top-0 left-0 -z-50 h-full w-full bg-primary"></div>
         <Background className=" fixed top-0 left-0 -z-50 md:h-full w-full gradient-bg"></Background>
         <Hero
           className={`grid transition-opacity duration-1000 ${
