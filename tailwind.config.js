@@ -6,7 +6,7 @@ export default {
       colors: {
         primary: "#910022",
         lowcontrast: "#FFE0E8",
-        offwhite: "#FFF7F9",
+        offwhite: "#FDD5D5",
         highcontrast: "#FFFF00",
       },
       fontFamily: {
