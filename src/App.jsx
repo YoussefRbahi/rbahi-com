@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { fetchUserIP } from "./api/fetchUserIP";
 import "./App.css";
 import MainPart from "./components/MainPart";
+import Background from "./components/Background";
 function App() {
   // Initialize with default location data in case the fetch fails
   const [userData, setUserData] = useState({
@@ -50,18 +51,34 @@ function App() {
     }
     fetchUserData();
   }, []);
+  const [siteUnlocked, setSiteUnlocked] = useState(false);
+  const unlockSite = () => {
+    setSiteUnlocked(!siteUnlocked);
+  };
   console.log(userData);
 
   return (
     <>
-      <div className="snap-y md:snap-mandatory snap-proximity h-screen w-screen max-w-screen overflow-y-auto  overflow-x-hidden text-slate-800 relative">
-        <div className="gradient-bg h-screen overflow-hidden"></div>
-        <div className="grid snap-start md:h-screen ">
-          <Hero className="relative m-6" userData={userData} />
-        </div>
+      <div className="h-screen max-h-screen text-white">
         <div
-          id="main-section"
-          className=" grid snap-start mx-auto min-h-screen  px-6 py-12 md:px-12 md:py-20 lg:px-48 lg:py-0 text-left bg-primary text-lowcontrast font-light"
+          style={{ backgroundColor: "#910022" }}
+          className="fixed top-0 left-0 -z-50 h-full w-full"
+        ></div>
+        <Background className=" fixed top-0 left-0 -z-50 md:h-full w-full gradient-bg"></Background>
+        <Hero
+          className={`grid transition-opacity duration-1000 ${
+            siteUnlocked ? "opacity-0 -z-50" : "opacity-100 overflow-y-scroll"
+          }`}
+          userData={userData}
+          unlockSite={unlockSite}
+        />
+        <div
+          name="main"
+          className={`grid transition-all duration-1000 delay-300 top-0 ${
+            siteUnlocked
+              ? "min-h-screen opacity-100 z-50 visible"
+              : "h-0 opacity-0 -z-50 invisible overflow-hidden"
+          } absolute mx-auto px-6 py-12 md:px-12 md:py-20 lg:px-48 lg:py-0 text-left  text-lowcontrast `}
         >
           <MainPart />
         </div>
