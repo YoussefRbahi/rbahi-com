@@ -5,15 +5,15 @@ function Bio() {
         <img src="" alt="" />
       </div>
 
-      <h1 className="text-3xl font-bold tracking-tight sm:text-4xl text-offwhite">
+      <h1 className="text-3xl font-bold tracking-tight sm:text-5xl text-highcontrast">
         <a href="/">Youssef Rbahi</a>
       </h1>
-      <h2 className="text-xl font-medium text-offwhite">
+      <h2 className="text-xl font-medium text-highcontrast">
         Junior Frontend Developer
       </h2>
       <p className="text-md">
         I blend my web development skills with marketing expertise to craft
-        visually stunning, user-friendly digital experiences.
+        engaging and impactful digital experiences.
       </p>
     </div>
   );
