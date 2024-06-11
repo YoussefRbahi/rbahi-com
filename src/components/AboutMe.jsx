@@ -1,46 +1,48 @@
 export default function AboutMe() {
   return (
-    <div className="grid my-auto gap-8">
-      <div className="">
-        <p>
-          I am a software engineer with a passion for web development. I have
-          experience with JavaScript, React, and Node.js. I am always looking to
-          learn new technologies and improve my skills.
-        </p>
-        <p>My stack includes:</p>
-        <ul>
-          <li>JavaScript</li>
-          <li>React</li>
-          <li>Node.js</li>
-          <li>Express</li>
-          <li>PostgreSQL</li>
-          <li>HTML</li>
-          <li>CSS</li>
-        </ul>
-      </div>
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum."
-      <em>
-        <em>
-          e e
-          <em>
-            <em>
-              <em>
-                e
-                <em>
-                  eqfe qewf qwef qwef wqef wqe
-                  <fieldset>wqefqw ef</fieldset>
-                </em>
-              </em>
-            </em>
-          </em>
-        </em>
-      </em>
+    <div className="grid my-auto gap-4">
+      <p>
+        I began my programming journey at age 10, teaching myself Visual Basic
+        to create my own 3D MMORPG. While that ambition was a bit out of reach,
+        it ignited a lasting passion for programming and led me to experiment
+        with web development using Dreamweaver,{" "}
+        <span className="highlighted-text">HTML</span>, and{" "}
+        <span className="highlighted-text">CSS</span>. These early explorations
+        were purely for fun, and I hadn&apos;t yet considered a professional
+        career in tech.
+      </p>
+      <p>
+        During high school, I expanded my technical skills by building a few
+        Arduino projects and dabbling in{" "}
+        <span className="highlighted-text">Python</span>, further fueling my
+        interest in technology. After earning my Bachelor&apos;s degree, I
+        ventured into{" "}
+        <span className="highlighted-text">digital marketing</span> and
+        completed an MBA, thoroughly enjoying the blend of creativity and
+        strategy.
+      </p>
+      <p>
+        My role in marketing unexpectedly brought me back to my tech roots, as I
+        often found myself tasked with updating and managing{" "}
+        <span className="highlighted-text">WordPress</span> websites. This work
+        reignited my interest in web development, especially in designing
+        websites that are visually appealing and functionally robust.
+      </p>
+      <p>
+        Motivated by this renewed passion, I delved into{" "}
+        <span className="highlighted-text">JavaScript</span> and expanded my
+        expertise to include modern technologies like{" "}
+        <span className="highlighted-text">React</span>,{" "}
+        <span className="highlighted-text">Vue</span>,{" "}
+        <span className="highlighted-text">Tailwind</span>, and{" "}
+        <span className="highlighted-text">Node</span>. I am also pursuing an{" "}
+        <span className="highlighted-text">MSc in Computer Science</span>,
+        building a strong foundation in <span>software engineering</span>{" "}
+        concepts. My background in marketing, particularly in{" "}
+        <span className="highlighted-text">SEO</span> and{" "}
+        <span className="highlighted-text">UI/UX</span>, allows me to build
+        websites that are not only functional but also strategically effective.
+      </p>
     </div>
   );
 }
