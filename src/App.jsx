@@ -75,7 +75,7 @@ function App() {
             siteUnlocked
               ? "min-h-screen opacity-100 z-50 visible"
               : "h-0 opacity-0 -z-50 invisible overflow-hidden"
-          } absolute mx-auto px-6 py-12 md:px-12 md:py-20 lg:px-48 lg:py-0 text-left  text-lowcontrast `}
+          } absolute mx-auto px-6 py-12 md:px-12 md:py-20 lg:px-48 lg:py-0 text-left font-light text-lowcontrast `}
         >
           <MainPart />
         </div>

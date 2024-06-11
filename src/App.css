@@ -37,8 +37,8 @@
   height: 100vh;
   background-size: 200% 200%;
   background-image: radial-gradient(
-    circle 30rem at 50% 50%,
-    rgba(202, 133, 255, 0.211) 0px,
+    circle 15rem at 50% 50%,
+    rgba(255, 237, 190, 0.05) 0px,
     transparent 100%
   );
   animation: moveBackground 5s infinite running;
@@ -47,4 +47,12 @@
 
 a {
   @apply hover:text-highcontrast;
+}
+
+*::selection {
+  @apply bg-highcontrast text-black;
+}
+
+.highlighted-text {
+  @apply text-highcontrast;
 }
