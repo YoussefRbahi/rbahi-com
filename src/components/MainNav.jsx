@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 export default function MainNav({ sections }) {
   return (
     <nav>
-      <ul className="flex flex-col justify-between gap-2">
+      <ul className="flex flex-col justify-between gap-2 text-white">
         {sections.map((section) => (
           <li key={section.key}>
             <Link
@@ -12,8 +12,8 @@ export default function MainNav({ sections }) {
               spy={true}
               smooth={true}
               duration={500}
-              offset={-100}
-              className="uppercase hover:text-highcontrast hover:font-semibold"
+              offset={-300}
+              className="uppercase cursor-pointer hover:text-highcontrast hover:font-semibold"
             >
               {section.title}
             </Link>
