@@ -1,4 +1,4 @@
-import Instagram from "../assets/images/instagram.svg?react";
+import Email from "../assets/images/envelope-solid.svg?react";
 import LinkedIn from "../assets/images/linkedin.svg?react";
 import GitHub from "../assets/images/github.svg?react";
 import XTwitter from "../assets/images/x-twitter.svg?react";
@@ -12,7 +12,7 @@ export default function Socials() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <LinkedIn alt="LinkedIn" className="w-6 h-6 fill-current" />
+          <LinkedIn alt="LinkedIn" className="h-6 fill-current" />
         </a>
       </li>
       <li>
@@ -21,7 +21,7 @@ export default function Socials() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <GitHub alt="GitHub" className="w-6 h-6 fill-current" />
+          <GitHub alt="GitHub" className="h-6 fill-current" />
         </a>
       </li>
       <li>
@@ -30,25 +30,25 @@ export default function Socials() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <XTwitter alt="X/Twitter" className="w-6 h-6 fill-current" />
+          <XTwitter alt="X/Twitter" className="h-6 fill-current" />
         </a>
       </li>
       <li>
         <a
-          href="https://instagram.com/youssef.rbahi"
+          href="mailto:contact@rbahi.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Instagram className="w-6 h-6 fill-current" />
+          <Email alt="Email" className="h-6 fill-current" />
         </a>
       </li>
       <li>
         <a
-          href="https://youssefrbahi.com/resume.pdf"
+          href="https://rbahi.com/resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <File alt="Resume" className="w-6 h-6 fill-current" />
+          <File alt="Resume" className="h-6 fill-current" />
         </a>
       </li>
     </ul>
