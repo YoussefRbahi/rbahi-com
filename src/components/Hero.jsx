@@ -51,7 +51,8 @@ function Hero({ className, userData, unlockSite }) {
         <div className=" absolute left-1/2 -translate-x-1/2 bottom-0 mb-20 ">
           <button
             onClick={unlockSite}
-            className="text-2xl md:text-4xl lg:text-5xl hover:text-highcontrast hover:font-medium"
+            className="text-2xl md:text-4xl lg:text-5xl hover:text-highcontrast bg-double-width
+           animate-textgradient bg-gradient-to-r from-highcontrast via-white to-highcontrast bg-clip-text text-transparent font-semibold transition-colors"
           >
             ↵ Enter
           </button>

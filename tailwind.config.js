@@ -12,6 +12,25 @@ export default {
       fontFamily: {
         sans: ["Poppins", "sans-serif"],
       },
+      backgroundSize: {
+        "double-width": "200% 100%",
+      },
+      animation: {
+        textgradient: "textgradient 3s linear infinite",
+      },
+      keyframes: {
+        textgradient: {
+          "0%%": {
+            "background-position": "0% 50%",
+          },
+          "50%": {
+            "background-position": "100% 50%",
+          },
+          "100%": {
+            "background-position": "200% 50%",
+          },
+        },
+      },
     },
   },
   plugins: [],
