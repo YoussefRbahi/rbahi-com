@@ -23,19 +23,21 @@ function Hero({ className, userData, unlockSite }) {
 
   return (
     <div className={`${className} grid h-svh relative`}>
-      <div className="absolute m-6 top-0 start-0 text-3xl ">
-        <p>
-          {userData.location.region}, {userData.location.country}
-        </p>
-        <Weather userData={userData} />
-      </div>
-      <div className="absolute m-6 top-0 end-0 text-4xl ">
-        <Time userData={userData} showSeconds={false} />
+      <div className="absolute m-6 top-0 inset-x-0 flex justify-between items-start">
+        <div className="   text-lg md:text-xl lg:text-3xl ">
+          <p>
+            {userData.location.region}, {userData.location.country}
+          </p>
+          <Weather userData={userData} />
+        </div>
+        <div className=" text-3xl mt-0.5 ">
+          <Time userData={userData} showSeconds={false} />
+        </div>
       </div>
 
       <div className="grid h-full text-center">
         <div className="m-auto">
-          <h1 className="text-7xl">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl">
             <p>Hi. I&apos;m Youssef.</p>
             <p>
               {titles[titleIndex].article}
@@ -46,12 +48,12 @@ function Hero({ className, userData, unlockSite }) {
             </p>
           </h1>
         </div>
-        <div className=" absolute left-1/2 -translate-x-1/2 bottom-0 mb-20">
+        <div className=" absolute left-1/2 -translate-x-1/2 bottom-0 mb-20 ">
           <button
             onClick={unlockSite}
-            className="text-5xl hover:text-highcontrast hover:font-medium"
+            className="text-2xl md:text-4xl lg:text-5xl hover:text-highcontrast hover:font-medium"
           >
-            Enter
+            ↵ Enter
           </button>
         </div>
       </div>
