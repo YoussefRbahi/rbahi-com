@@ -15,7 +15,7 @@ export default function Projects() {
       image: "/images/hikma-education.png",
       link: "https://hikmaeducation.netlify.app/",
 
-      tags: ["Vue", "Tailwind CSS", "Strapi"],
+      tags: ["Vue", "Tailwind", "Strapi"],
     },
     {
       name: "rbahi.com",
