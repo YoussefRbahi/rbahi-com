@@ -4,10 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#910022",
+        primary: "#690018",
         lowcontrast: "#FFE0E8",
-        offwhite: "#FDD5D5",
-        highcontrast: "#FFFF00",
+        offwhite: "#FFB9B9",
+        highcontrast: "#FFFD9B",
       },
       fontFamily: {
         sans: ["Poppins", "sans-serif"],
