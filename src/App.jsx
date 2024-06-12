@@ -59,11 +59,11 @@ function App() {
 
   return (
     <>
-      <div className="h-screen max-h-screen text-white">
+      <div className="grid  h-screen max-h-screen text-white place-items-center">
         <div className="fixed top-0 left-0 -z-50 h-full w-full bg-primary"></div>
         <Background className=" fixed top-0 left-0 -z-50 md:h-full w-full gradient-bg"></Background>
         <Hero
-          className={`grid transition-opacity duration-1000 ${
+          className={`grid transition-opacity duration-1000 w-full ${
             siteUnlocked ? "opacity-0 -z-50" : "opacity-100 overflow-y-scroll"
           }`}
           userData={userData}
@@ -71,11 +71,11 @@ function App() {
         />
         <div
           name="main"
-          className={`grid transition-all duration-1000 delay-300 top-0 ${
+          className={`grid transition-all duration-1000 delay-300 top-0 max-w-screen-2xl ${
             siteUnlocked
               ? "min-h-screen opacity-100 z-50 visible"
               : "h-0 opacity-0 -z-50 invisible overflow-hidden"
-          } absolute mx-auto px-6 py-12 md:px-12 md:py-20 lg:px-48 lg:py-0 text-left font-light text-lowcontrast `}
+          } absolute inset-0 mx-auto  px-6 py-12 md:px-12 md:py-0 lg:px-24 xl:px-48 lg:py-0 text-left font-light text-lowcontrast `}
         >
           <MainPart />
         </div>

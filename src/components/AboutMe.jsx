@@ -1,6 +1,6 @@
 export default function AboutMe() {
   return (
-    <div className="grid my-auto gap-4">
+    <div className="grid my-auto gap-4 text-justify text-md">
       <p>
         I began my programming journey at age 10, teaching myself Visual Basic
         to create my own 3D MMORPG. While that ambition was a bit out of reach,

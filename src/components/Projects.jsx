@@ -24,15 +24,15 @@ export default function Projects() {
       image: "/images/rbahi.png",
       link: "https://rbahi.com",
 
-      tags: ["React", "Tailwind CSS", "REST API"],
+      tags: ["React", "Tailwind", "REST"],
     },
   ];
   return (
     <ul className="grid gap-8 text-justify">
       {projects.map((project, index) => (
         <li key={index} className="grid gap-4">
-          <div className="flex gap-4">
-            <div className=" w-1/3 rounded-sm border border-highcontrast ">
+          <div className="flex flex-col md:flex-row gap-4 ">
+            <div className=" md:w-1/3 w-4/5 h-min rounded-sm border border-highcontrast ">
               <img
                 src={project.image}
                 alt="project-image"
@@ -42,7 +42,7 @@ export default function Projects() {
 
             <div className="flex flex-col gap-4">
               <a href={project.link} className="relative block">
-                <h3 className="text-3xl font-medium text-highcontrast after:content-['↗'] after:text-2xl after:absolute after:ms-1 after:transition-transform hover:after:-translate-y-1 hover:after:translate-x-1">
+                <h3 className="text-3xl md:text-2xl font-medium text-highcontrast after:content-['↗'] after:text-2xl after:absolute after:ms-1 after:transition-transform hover:after:-translate-y-1 hover:after:translate-x-1">
                   {project.name}
                 </h3>
               </a>
