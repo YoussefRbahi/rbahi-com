@@ -32,6 +32,7 @@ function App() {
   const [siteUnlocked, setSiteUnlocked] = useState(false);
   const unlockSite = () => {
     setSiteUnlocked(!siteUnlocked);
+    setScrollEnabled(true);
   };
   const [scrollEnabled, setScrollEnabled] = useState(false);
 
@@ -74,7 +75,7 @@ function App() {
         if (event.keyCode === 13 && !siteUnlocked) {
           setSiteUnlocked(true);
           // Delay the enabling of scroll by 100ms after unlocking
-          setTimeout(() => setScrollEnabled(true), 100);
+          setScrollEnabled(true);
         }
       }
     };
