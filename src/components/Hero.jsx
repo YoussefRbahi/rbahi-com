@@ -48,15 +48,21 @@ function Hero({ className, userData, unlockSite }) {
             </p>
           </h1>
         </div>
-        <div className=" absolute left-1/2 -translate-x-1/2 bottom-0 mb-20 ">
-          <button
-            onClick={unlockSite}
-            className="text-2xl md:text-4xl lg:text-5xl hover:text-highcontrast bg-double-width
-           animate-textgradient bg-gradient-to-r from-highcontrast via-white to-highcontrast bg-clip-text text-transparent font-semibold transition-colors"
+        <button
+          onClick={unlockSite}
+          className=" absolute left-1/2 -translate-x-1/2 bottom-0 mb-4 md:mb-8 lg:mb-12 animate-fade"
+        >
+          <span
+            className="hidden lg:block text-lg xl:text-xl 2xl:text-2xl hover:text-highcontrast" /*bg-double-width
+            animate-textgradient bg-gradient-to-r from-highcontrast via-white to-highcontrast bg-clip-text text-transparent font-semibold transition-colors*/
           >
-            ↵ Enter
-          </button>
-        </div>
+            Scroll down or press ↵ Enter
+          </span>
+          <span className="block lg:hidden text-md md:text-xl  ">
+            {" "}
+            Swipe up to unlock
+          </span>
+        </button>
       </div>
     </div>
   );

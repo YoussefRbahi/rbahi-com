@@ -29,6 +29,11 @@ function App() {
       humidity: 73,
     },
   });
+  const [siteUnlocked, setSiteUnlocked] = useState(false);
+  const unlockSite = () => {
+    setSiteUnlocked(!siteUnlocked);
+  };
+  const [scrollEnabled, setScrollEnabled] = useState(false);
 
   useEffect(() => {
     async function fetchUserData() {
@@ -51,10 +56,61 @@ function App() {
     }
     fetchUserData();
   }, []);
-  const [siteUnlocked, setSiteUnlocked] = useState(false);
-  const unlockSite = () => {
-    setSiteUnlocked(!siteUnlocked);
-  };
+  useEffect(() => {
+    const handleWheel = (event) => {
+      if (!scrollEnabled) {
+        event.preventDefault();
+        if (event.deltaY > 20 && !siteUnlocked) {
+          setSiteUnlocked(true);
+          // Delay the enabling of scroll by 100ms after unlocking
+          setTimeout(() => setScrollEnabled(true), 1500);
+        }
+      }
+    };
+
+    const handleKeyPress = (event) => {
+      if (!scrollEnabled) {
+        event.preventDefault();
+        if (event.keyCode === 13 && !siteUnlocked) {
+          setSiteUnlocked(true);
+          // Delay the enabling of scroll by 100ms after unlocking
+          setTimeout(() => setScrollEnabled(true), 100);
+        }
+      }
+    };
+    const handleTouchStart = (event) => {
+      const startY = event.touches[0].clientY;
+      event.target.dataset.startY = startY; // Store the start Y position on the element itself
+    };
+
+    const handleTouchMove = (event) => {
+      if (!scrollEnabled) {
+        event.preventDefault();
+        const startY = parseFloat(event.target.dataset.startY);
+        const currentY = event.touches[0].clientY;
+        const diffY = startY - currentY;
+
+        // Check if the swipe is upwards and exceeds a threshold of 50 pixels
+        if (diffY > 100 && !siteUnlocked) {
+          setSiteUnlocked(true);
+          setTimeout(() => setScrollEnabled(true), 100);
+        }
+      }
+    };
+
+    window.addEventListener("wheel", handleWheel, { passive: false });
+    window.addEventListener("keydown", handleKeyPress, { passive: false });
+    window.addEventListener("touchstart", handleTouchStart, { passive: false });
+    window.addEventListener("touchmove", handleTouchMove, { passive: false });
+
+    return () => {
+      window.removeEventListener("wheel", handleWheel);
+      window.removeEventListener("keydown", handleKeyPress);
+      window.removeEventListener("touchstart", handleTouchStart);
+      window.removeEventListener("touchmove", handleTouchMove);
+    };
+  }, [siteUnlocked, scrollEnabled]);
+
   console.log(userData);
 
   return (

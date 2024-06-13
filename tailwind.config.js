@@ -17,6 +17,7 @@ export default {
       },
       animation: {
         textgradient: "textgradient 3s linear infinite",
+        fade: "fade 3s ease-in-out infinite",
       },
       keyframes: {
         textgradient: {
@@ -29,6 +30,10 @@ export default {
           "100%": {
             "background-position": "200% 50%",
           },
+        },
+        fade: {
+          "0%, 100%": { opacity: 0 },
+          "50%": { opacity: 1 },
         },
       },
     },
