@@ -35,7 +35,7 @@ function Hero({ className, userData, unlockSite }) {
         </div>
       </div>
 
-      <div className="grid h-full text-center">
+      <div className="grid h-svh text-center">
         <div className="m-auto">
           <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl">
             <p>Hi. I&apos;m Youssef.</p>
