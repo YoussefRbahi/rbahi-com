@@ -20,7 +20,7 @@ export default function Projects() {
     {
       name: "rbahi.com",
       description:
-        "My portfolio website built from scratch using React and Tailwind CSS. It features a very minimal design heavily inspired by the work of Brittany Chiang and Sean Halpin. I have previously implemented multiple features that make use of REST APIs, including a weather widget, and a contact form, that I ended up scrapping to get a simpler and more streamlined design.",
+        "My portfolio website built from scratch using React and Tailwind CSS. It features a very minimal design heavily inspired by the work of Brittany Chiang and Sean Halpin. The lockscreen is inspired by the iOS lockscreen (and by videogame cutscenes on desktop) and uses ipify and WeatherAPI to get the user's location and weather information.",
       image: "/images/rbahi.png",
       link: "https://rbahi.com",
 
