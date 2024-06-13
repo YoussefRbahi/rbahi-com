@@ -43,11 +43,7 @@ export default function Socials() {
         </a>
       </li>
       <li>
-        <a
-          href="https://rbahi.com/resume.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="/resume" target="_blank" rel="noopener noreferrer">
           <File alt="Resume" className="h-6 fill-current" />
         </a>
       </li>
