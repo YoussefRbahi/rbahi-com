@@ -115,7 +115,7 @@ function App() {
 
   return (
     <>
-      <div className="grid  h-screen max-h-screen text-white place-items-center">
+      <div className="grid mt-0 h-screen max-h-screen text-white place-items-center">
         <div className="fixed top-0 left-0 -z-50 h-full w-full bg-primary"></div>
         <Background className=" fixed top-0 left-0 -z-50 md:h-full w-full gradient-bg"></Background>
         <Hero
