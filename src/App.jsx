@@ -117,8 +117,8 @@ function App() {
   return (
     <>
       <div className="grid mt-0  text-white place-items-center">
-        <div className="fixed top-0 left-0 -z-50 h-full w-full bg-primary"></div>
-        <Background className=" fixed top-0 left-0 -z-50 md:h-full w-full gradient-bg"></Background>
+        <div className="fixed top-0 left-0 -z-50 h-screen w-full bg-primary"></div>
+        <Background className="hidden lg:block fixed h-screen top-0 left-0 -z-50 md:h-full w-full gradient-bg"></Background>
         <Hero
           className={`grid transition-opacity duration-1000 w-full ${
             siteUnlocked ? "opacity-0 -z-50" : "opacity-100 overflow-y-scroll"

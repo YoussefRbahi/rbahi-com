@@ -31,7 +31,7 @@ export default function MainPart() {
         <Socials />
       </div>
 
-      <div className="grid text-md py-0 md:py-12 lg:py-24">
+      <div className="grid text-md pt-0 pb-4 md:py-12 lg:py-24">
         {sections.map((section, index) => (
           <Element
             key={section.key}
