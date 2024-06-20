@@ -63,7 +63,7 @@ function App() {
         event.preventDefault();
         if (event.deltaY > 20 && !siteUnlocked) {
           setSiteUnlocked(true);
-          // Delay the enabling of scroll by 100ms after unlocking
+          // Delay the enabling of scroll after unlocking
           setTimeout(() => setScrollEnabled(true), 1500);
         }
       }
@@ -74,7 +74,6 @@ function App() {
         event.preventDefault();
         if (event.keyCode === 13 && !siteUnlocked) {
           setSiteUnlocked(true);
-          // Delay the enabling of scroll by 100ms after unlocking
           setScrollEnabled(true);
         }
       }
@@ -91,7 +90,7 @@ function App() {
         const currentY = event.touches[0].clientY;
         const diffY = startY - currentY;
 
-        // Check if the swipe is upwards and exceeds a threshold of 50 pixels
+        // Check if the swipe is upwards and exceeds a certain threshold of pixels
         if (diffY > 100 && !siteUnlocked) {
           setSiteUnlocked(true);
           setTimeout(() => setScrollEnabled(true), 100);
