@@ -9,7 +9,7 @@ function Bio() {
         <a href="/">Youssef Rbahi</a>
       </h1>
       <h2 className="text-lg font-medium text-highcontrast">
-        Junior Frontend Developer
+        Frontend Developer
       </h2>
       <p className="text-md text-justify">
         I blend my web development skills with marketing expertise to craft
