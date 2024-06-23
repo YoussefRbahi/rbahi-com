@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Element, scrollSpy } from "react-scroll";
+import { Element, Link, scrollSpy } from "react-scroll";
 import AboutMe from "./AboutMe";
 import Projects from "./Projects";
 import MainNav from "./MainNav";
@@ -39,11 +39,24 @@ export default function MainPart() {
             id={section.key}
             className="grid relative"
           >
-            <div className="sticky top-0 bg-primary mb-2 font-medium text-3xl block py-2 bg-opacity-80 md:hidden">
+            <Link
+              activeClass="bg-gradient-to-b from-primary via-primary to-transparent"
+              to={section.key}
+              spy={true}
+              smooth={true}
+              duration={500}
+              offset={0}
+              className="sticky top-0 bg-opacity-0 font-medium text-3xl block pt-4 pb-4 md:hidden pointer-events-none sticky-div z-50"
+            >
               <h2>{section.title}</h2>
-            </div>
+            </Link>
+
             {section.component}
-            {index !== sections.length - 1 && <hr className="my-8" />}
+            {index !== sections.length - 1 && (
+              <div className="block pt-8 md:pb-8">
+                <hr />
+              </div>
+            )}
           </Element>
         ))}
       </div>
