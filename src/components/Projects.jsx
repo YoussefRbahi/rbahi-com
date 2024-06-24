@@ -3,7 +3,7 @@ export default function Projects() {
     {
       name: "Jeopardy Clone",
       description:
-        "A web-based clone of the popular game show Jeopardy, created using only Vanilla JavaScript, HTML, and CSS. This was my first JavaScript project, featuring a simple interface for question selection and responses. Questions and answers are stored as JSON in text files, demonstrating my initial handling of JavaScript for data storage.",
+        "A web-based clone of the popular game show Jeopardy, created using only Vanilla JavaScript, HTML, and CSS. The questions and answers are stored in JSON files and are loaded dynamically using JavaScript.",
       image: "/images/jeopardy.png",
       link: "https://github.com/YoussefRbahi/jeopardy",
       tags: ["HTML", "CSS", "JavaScript"],
@@ -11,7 +11,7 @@ export default function Projects() {
     {
       name: "Hikma Education",
       description:
-        "A website for Hikma Education, an agency that provides educational services in the Middle East. This was my first project that involved a front-end framework, Vue.js, and a back-end framework, Strapi. I also used Tailwind CSS for styling. The website is RTL-based but supports LTR and features a responsive design for different screen sizes.",
+        "A website for Hikma Education, an agency that provides educational services in the Middle East. It uses Vue and Tailwind CSS for the frontend and Strapi for the Backend. The website is RTL-based but supports LTR and features a responsive design for different screen sizes.",
       image: "/images/hikma-education.png",
       link: "https://hikmaeducation.netlify.app/",
 
