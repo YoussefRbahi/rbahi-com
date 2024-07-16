@@ -1,29 +1,35 @@
 export default function Projects() {
   const projects = [
     {
-      name: "Jeopardy Clone",
+      name: "Fontcetera",
       description:
-        "A web-based clone of the popular game show Jeopardy, created using only Vanilla JavaScript, HTML, and CSS. The questions and answers are stored in JSON files and are loaded dynamically using JavaScript.",
-      image: "/images/jeopardy.png",
-      link: "https://github.com/YoussefRbahi/jeopardy",
-      tags: ["HTML", "CSS", "JavaScript"],
+        "Fontcetera is a Chrome extension developed with React and crxjs that enables users to effortlessly format text with various Unicode fonts and styles. It offers a real-time preview and easy copy-to-clipboard functionality within a simple and intuitive user interface.",
+      image: "/images/fontcetera.png",
+      link: "https://github.com/youssefrbahi/fontcetera",
+      tags: ["React", "TypeScript", "Tailwind"],
     },
-    {
-      name: "Hikma Education",
-      description:
-        "A website for Hikma Education, an agency that provides educational services in the Middle East. It uses Vue and Tailwind CSS for the frontend and Strapi for the Backend. The website is RTL-based but supports LTR and features a responsive design for different screen sizes.",
-      image: "/images/hikma-education.png",
-      link: "https://hikmaeducation.netlify.app/",
-
-      tags: ["Vue", "Tailwind", "Strapi"],
-    },
+    // {
+    //   name: "Jeopardy Clone",
+    //   description:
+    //     "A web-based clone of the popular game show Jeopardy, created using only Vanilla JavaScript, HTML, and CSS. The questions and answers are stored in JSON files and are loaded dynamically using JavaScript.",
+    //   image: "/images/jeopardy.png",
+    //   link: "https://github.com/YoussefRbahi/jeopardy",
+    //   tags: ["HTML", "CSS", "JavaScript"],
+    // },
+    // {
+    //   name: "Hikma Education",
+    //   description:
+    //     "A website for Hikma Education, an agency that provides educational services in the Middle East. It uses Vue and Tailwind CSS for the frontend and Strapi for the Backend. The website is RTL-based but supports LTR and features a responsive design for different screen sizes.",
+    //   image: "/images/hikma-education.png",
+    //   link: "https://hikmaeducation.netlify.app/",
+    //   tags: ["Vue", "Tailwind", "Strapi"],
+    // },
     {
       name: "rbahi.com",
       description:
         "My portfolio website built from scratch using React and Tailwind CSS. It features a very minimal design heavily inspired by the work of Brittany Chiang and Sean Halpin. The lockscreen is inspired by the iOS lockscreen (and by videogame cutscenes on desktop) and uses ipify and WeatherAPI to get the user's location and weather information.",
       image: "/images/rbahi.png",
-      link: "https://rbahi.com",
-
+      link: "https://github.com/YoussefRbahi/rbahi-com",
       tags: ["React", "Tailwind", "REST"],
     },
   ];
