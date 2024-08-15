@@ -1,11 +1,21 @@
 export default function Projects() {
   const projects = [
     {
+      name: "react-peer-rooms",
+      description:
+        "A React hooks library for centralized yet serverless P2P communication. It allows you to easily create PeerJS-based WebRTC rooms for data exchange using a host/client(s) model. ",
+      image: "/images/npm.png",
+      github: "https://github.com/youssefrbahi/react-peer-rooms",
+      link: "https://www.npmjs.com/package/react-peer-rooms",
+      tags: ["React", "TypeScript", "PeerJS"],
+    },
+    {
       name: "Fontcetera",
       description:
         "Fontcetera is a Chrome extension developed with React and crxjs that enables users to effortlessly format text with various Unicode fonts and styles. It offers a real-time preview and easy copy-to-clipboard functionality within a simple and intuitive user interface.",
       image: "/images/fontcetera.png",
-      link: "https://github.com/youssefrbahi/fontcetera",
+      github: "https://github.com/youssefrbahi/fontcetera",
+      link: "https://chromewebstore.google.com/detail/fontcetera-unicode-text-f/efpedoejhnkhmjeclomcoamlbmohcaie?hl=en",
       tags: ["React", "TypeScript", "Tailwind"],
     },
     // {
@@ -29,7 +39,9 @@ export default function Projects() {
       description:
         "My portfolio website built from scratch using React and Tailwind CSS. It features a very minimal design heavily inspired by the work of Brittany Chiang and Sean Halpin. The lockscreen is inspired by the iOS lockscreen (and by videogame cutscenes on desktop) and uses ipify and WeatherAPI to get the user's location and weather information.",
       image: "/images/rbahi.png",
-      link: "https://github.com/YoussefRbahi/rbahi-com",
+      link: "https://rbahi.com",
+      github: "https://github.com/YoussefRbahi/rbahi-com",
+
       tags: ["React", "Tailwind", "REST"],
     },
   ];
@@ -39,16 +51,29 @@ export default function Projects() {
         <li key={index} className="grid gap-4">
           <div className="flex flex-col md:flex-row gap-4 ">
             <div className=" md:w-1/3 w-4/5 h-min rounded-sm border border-highcontrast ">
-              <img
-                src={project.image}
-                alt="project-image"
-                className="rounded-sm"
-              />
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative block text-highcontrast"
+              >
+                <img
+                  src={project.image}
+                  alt="project-image"
+                  className="rounded-sm"
+                />
+              </a>
             </div>
 
             <div className="flex flex-col gap-4">
-              <a href={project.link} className="relative block">
-                <h3 className="text-3xl md:text-2xl font-medium text-highcontrast after:content-['↗'] after:text-2xl after:absolute after:ms-1 after:transition-transform hover:after:-translate-y-1 hover:after:translate-x-1">
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative block text-highcontrast"
+              >
+                <h3 className="text-3xl md:text-2xl font-medium">
+                  {/* <h3 className="text-3xl md:text-2xl font-medium text-highcontrast after:content-['↗'] after:text-2xl after:absolute after:ms-1 after:transition-transform hover:after:-translate-y-1 hover:after:translate-x-1"> */}
                   {project.name}
                 </h3>
               </a>
@@ -66,7 +91,17 @@ export default function Projects() {
             </div>
           </div>
           <div className="text-sm">
-            <p>{project.description}</p>
+            <p>
+              {project.description} &nbsp;
+              {project.link && (
+                <a
+                  href={project.github}
+                  className="relative inline-block font-medium text-highcontrast underline"
+                >
+                  Github
+                </a>
+              )}
+            </p>
           </div>
         </li>
       ))}
