@@ -9,11 +9,11 @@ function Bio() {
         <a href="/">Youssef Rbahi</a>
       </h1>
       <h2 className="text-lg font-medium text-highcontrast">
-        Frontend Developer
+        Web Developer & Designer
       </h2>
       <p className="text-md text-justify">
-        I blend my web development skills with marketing expertise to craft
-        engaging and impactful digital experiences.
+        I create pixel-perfect, user-oriented web solutions that help brands
+        grow and succeed.
       </p>
     </div>
   );
