@@ -117,7 +117,7 @@ function App() {
   return (
     <>
       <div className="grid mt-0  text-white place-items-center">
-        <div className="fixed top-0 left-0 -z-50 h-screen w-full bg-primary">
+        <div className="fixed top-0 left-0 -z-50 h-screen w-full bg-bgcolor">
           <AnimatedBg />
         </div>
         <Background className="hidden lg:block fixed h-screen top-0 left-0 -z-50 md:h-full w-full gradient-bg"></Background>
@@ -134,7 +134,7 @@ function App() {
             siteUnlocked
               ? "min-h-screen opacity-100 z-50 visible"
               : "h-0 opacity-0 -z-50 invisible overflow-hidden"
-          } absolute inset-0 mx-auto  px-6 py-12 md:px-12 md:py-0 lg:px-24 xl:px-48 lg:py-0 text-left font-light text-lowcontrast `}
+          } absolute inset-0 mx-auto  px-6 py-12 md:px-12 md:py-0 lg:px-24 xl:px-48 lg:py-0 text-left font-normal text-primary `}
         >
           <MainPart />
         </div>

@@ -41,7 +41,7 @@ function Hero({ className, userData, unlockSite }) {
             <p>Hi. I&apos;m Youssef.</p>
             <p>
               {titles[titleIndex].article}
-              <span className="text-highcontrast ">
+              <span className="text-accent ">
                 &nbsp;{titles[titleIndex].role}
               </span>
               .
@@ -53,8 +53,8 @@ function Hero({ className, userData, unlockSite }) {
           className=" absolute left-1/2 -translate-x-1/2 bottom-0 mb-4 md:mb-8 lg:mb-12 animate-fade"
         >
           <span
-            className="hidden lg:block text-lg xl:text-xl 2xl:text-2xl hover:text-highcontrast" /*bg-double-width
-            animate-textgradient bg-gradient-to-r from-highcontrast via-white to-highcontrast bg-clip-text text-transparent font-semibold transition-colors*/
+            className="hidden lg:block text-lg xl:text-xl 2xl:text-2xl hover:text-accent" /*bg-double-width
+            animate-textgradient bg-gradient-to-r from-accent via-white to-accent bg-clip-text text-transparent font-semibold transition-colors*/
           >
             Scroll down or press ↵ Enter
           </span>

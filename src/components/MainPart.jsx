@@ -40,7 +40,7 @@ export default function MainPart() {
             className="grid relative"
           >
             <Link
-              activeClass="bg-gradient-to-b from-primary via-primary to-transparent"
+              activeClass="bg-gradient-to-b from-bgcolor via-bgcolor to-transparent"
               to={section.key}
               spy={true}
               smooth={true}

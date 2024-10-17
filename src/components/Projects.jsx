@@ -59,12 +59,12 @@ export default function Projects() {
       {projects.map((project, index) => (
         <li key={index} className="grid gap-4">
           <div className="flex flex-col md:flex-row gap-4 ">
-            <div className=" md:w-1/3 w-4/5 h-min rounded-sm border border-highcontrast ">
+            <div className=" md:w-1/3 w-4/5 h-min rounded-sm ">
               <a
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="relative block text-highcontrast"
+                className="relative block text-accent"
               >
                 <img
                   src={project.image}
@@ -79,10 +79,10 @@ export default function Projects() {
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="relative block text-highcontrast"
+                className="relative block text-primary"
               >
                 <h3 className="text-3xl md:text-2xl font-medium text-nowrap">
-                  {/* <h3 className="text-3xl md:text-2xl font-medium text-highcontrast after:content-['↗'] after:text-2xl after:absolute after:ms-1 after:transition-transform hover:after:-translate-y-1 hover:after:translate-x-1"> */}
+                  {/* <h3 className="text-3xl md:text-2xl font-medium text-accent after:content-['↗'] after:text-2xl after:absolute after:ms-1 after:transition-transform hover:after:-translate-y-1 hover:after:translate-x-1"> */}
                   {project.name}
                 </h3>
               </a>
@@ -91,7 +91,7 @@ export default function Projects() {
                 {project.tags.map((tag, index) => (
                   <span
                     key={index}
-                    className="rounded-full px-2 py-1 text-xs font-semibold text-primary bg-highcontrast"
+                    className="rounded-full px-2 py-1 text-xs font-semibold text-accent bg-accent bg-opacity-25"
                   >
                     {tag}
                   </span>
@@ -107,7 +107,7 @@ export default function Projects() {
                   href={project.github}
                   rel="noopener noreferrer"
                   target="_blank"
-                  className="relative inline-block font-medium text-highcontrast underline"
+                  className="relative inline-block font-medium text-accent underline"
                 >
                   Github
                 </a>

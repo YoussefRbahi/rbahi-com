@@ -9,8 +9,8 @@ export default function SelectSection({
         <button
           key={section.key}
           className={` py-2 px-4 text-left  ${
-            section.key === activeSection ? "text-5xl text-primary" : "text-3xl"
-          } hover:text-primary`}
+            section.key === activeSection ? "text-5xl text-bgcolor" : "text-3xl"
+          } hover:text-bgcolor`}
           onClick={() => setActiveSection(section.key)}
         >
           {section.title}

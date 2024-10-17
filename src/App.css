@@ -1,13 +1,13 @@
 a {
-  @apply hover:text-highcontrast;
+  @apply hover:text-accent;
 }
 
 *::selection {
-  @apply bg-highcontrast text-black;
+  @apply bg-accent text-black;
 }
 
 .highlighted-text {
-  @apply text-highcontrast;
+  @apply text-accent;
 }
 .sticky-div::before {
   content: "";

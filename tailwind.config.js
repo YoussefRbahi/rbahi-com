@@ -4,9 +4,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#1E1B4B",
-        lowcontrast: "#FFFFFF",
-        highcontrast: "#FFDD44",
+        bgcolor: "#1e1b4b", // Background color
+        primary: "#FFFFFFCC", // Primary text color
+        accent: "#e3da64", // Accent color
       },
       fontFamily: {
         sans: ["Poppins", "sans-serif"],
