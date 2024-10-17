@@ -8,7 +8,7 @@ function Bio() {
       <h1 className="font-bold tracking-tight text-4xl md:text-3xl lg:text-4xl 2xl:text-5xl  text-primary">
         <a href="/">Youssef Rbahi</a>
       </h1>
-      <h2 className="text-lg font-medium text-primary">
+      <h2 className="text-lg font-regular text-accent">
         Web Developer & Designer
       </h2>
       <p className="text-md text-justify">
