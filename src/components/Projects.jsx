@@ -57,8 +57,9 @@ export default function Projects() {
   return (
     <ul className="grid gap-8 text-justify">
       {projects.map((project, index) => (
-        <li key={index} className="grid gap-4">
+        <li key={index} className="grid gap-4 relative group">
           <div className="flex flex-col md:flex-row gap-4 ">
+            <div className="hidden absolute -inset-x-4 -inset-y-4 z-0 lg:block min-w-full min-h-full group-hover:bg-primary/10 duration-75 transition-colors"></div>
             <div className=" md:w-1/3 w-4/5 h-min rounded-sm ">
               <a
                 href={project.link}
@@ -82,7 +83,7 @@ export default function Projects() {
                 className="relative block text-primary"
               >
                 <h3 className="text-3xl md:text-2xl font-medium text-nowrap">
-                  {/* <h3 className="text-3xl md:text-2xl font-medium text-accent after:content-['↗'] after:text-2xl after:absolute after:ms-1 after:transition-transform hover:after:-translate-y-1 hover:after:translate-x-1"> */}
+                  {/* <h3 className="text-3xl md:text-2xl font-medium after:content-['🡕'] after:text-2xl after:absolute after:ms-2 after:transition-transform hover:after:-translate-y-1 hover:after:translate-x-1"> */}
                   {project.name}
                 </h3>
               </a>
