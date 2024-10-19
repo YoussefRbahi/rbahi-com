@@ -9,6 +9,7 @@ export default function MainNav({ sections }) {
             <Link
               activeClass="text-accent font-semibold"
               to={section.key}
+              href={`#${section.key}`}
               spy={true}
               smooth={true}
               duration={500}
