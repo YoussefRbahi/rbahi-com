@@ -40,13 +40,14 @@ export default function MainPart() {
             className="grid relative"
           >
             <Link
-              activeClass="bg-gradient-to-b from-bgcolor via-bgcolor to-transparent"
+              activeClass="bg-bgcolor"
               to={section.key}
+              href={`#${section.key}`}
               spy={true}
               smooth={true}
               duration={500}
               offset={0}
-              className="sticky top-0 bg-opacity-0 font-medium text-3xl block pt-4 pb-4 md:hidden pointer-events-none sticky-div z-50"
+              className="sticky top-0  font-medium text-3xl block pt-4 pb-4 md:hidden pointer-events-none sticky-div z-50"
             >
               <h2>{section.title}</h2>
             </Link>

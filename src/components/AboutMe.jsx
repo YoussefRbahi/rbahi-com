@@ -3,9 +3,9 @@ export default function AboutMe() {
     <div className="grid my-auto gap-4 text-justify text-md">
       <p>
         Hi, I&apos;m Youssef, a full-stack developer passionate about crafting
-        innovative web applications. With 5+ years of experience, I&apos;m
-        skilled in transforming creative concepts into intuitive,
-        high-performing digital solutions.
+        innovative web applications. I&apos;m skilled in creating and
+        transforming creative concepts into intuitive, high-performing digital
+        solutions.
       </p>
       <p>My expertise includes:</p>
       <p>
@@ -17,18 +17,11 @@ export default function AboutMe() {
       </p>
       <p>
         <span className="highlighted-text font-medium">
-          Versatile Expertise:
+          UI/UX Design & Integration:
         </span>{" "}
-        Experienced in building a wide range of web applications, from SPAs and
-        Chrome extensions to SSR-enabled websites and custom WordPress
-        solutions.
-      </p>
-      <p>
-        <span className="highlighted-text font-medium">
-          Design Integration:
-        </span>{" "}
-        Able to seamlessly translate Figma designs into functional web
-        applications.
+        From designing wireframes to translating Figma designs into responsive
+        web applications, including SPAs, Chrome extensions, and SSR-enabled
+        websites.
       </p>
       <p>
         <span className="highlighted-text font-medium">

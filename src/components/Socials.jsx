@@ -11,6 +11,7 @@ export default function Socials() {
           href="https://linkedin.com/in/youssefrbahi"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="LinkedIn"
         >
           <LinkedIn alt="LinkedIn" className="h-6 fill-current" />
         </a>
@@ -20,6 +21,7 @@ export default function Socials() {
           href="https://github.com/youssefrbahi"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="GitHub"
         >
           <GitHub alt="GitHub" className="h-6 fill-current" />
         </a>
@@ -29,6 +31,7 @@ export default function Socials() {
           href="https://twitter.com/youssef_rbahi"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Twitter"
         >
           <XTwitter alt="X/Twitter" className="h-6 fill-current" />
         </a>
@@ -38,15 +41,16 @@ export default function Socials() {
           href="mailto:contact@rbahi.com"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Email"
         >
           <Email alt="Email" className="h-6 fill-current" />
         </a>
       </li>
-      <li>
-        <a href="/resume" target="_blank" rel="noopener noreferrer">
+      {/* <li>
+        <a href="/resume" target="_blank" rel="noopener noreferrer" aria-label="Resume">
           <File alt="Resume" className="h-6 fill-current" />
         </a>
-      </li>
+      </li> */}
     </ul>
   );
 }
