@@ -4,7 +4,7 @@ export default function Projects() {
       name: "IRL Chat",
       description:
         "Real-time chat web app built using react-peer-rooms (see below) and Next.js. It allows you have a chat screen for live events where attendees can send and see messages from everyone in real-time. Connecting is as simple as opening a link or scanning a QR code and entering a nickname.",
-      image: "/images/irlchat.png",
+      image: "/images/irlchat.webp",
       github: "https://github.com/youssefrbahi/irl-chat",
       link: "https://irlchat.netlify.app",
       tags: ["React", "TypeScript", "Next.js"],
@@ -13,7 +13,7 @@ export default function Projects() {
       name: "react-peer-rooms",
       description:
         "React hooks library for centralized yet serverless P2P communication. It allows you to easily create PeerJS-based WebRTC rooms for data exchange using a host/client(s) model. ",
-      image: "/images/npm.png",
+      image: "/images/npm.webp",
       github: "https://github.com/youssefrbahi/react-peer-rooms",
       link: "https://www.npmjs.com/package/react-peer-rooms",
       tags: ["React", "TypeScript", "PeerJS"],
@@ -22,7 +22,7 @@ export default function Projects() {
       name: "Fontcetera",
       description:
         "Chrome extension developed with React and crxjs that enables users to effortlessly format text with various Unicode fonts and styles. It offers a real-time preview and easy copy-to-clipboard functionality within a simple and intuitive user interface.",
-      image: "/images/fontcetera.png",
+      image: "/images/fontcetera.webp",
       github: "https://github.com/youssefrbahi/fontcetera",
       link: "https://chromewebstore.google.com/detail/fontcetera-unicode-text-f/efpedoejhnkhmjeclomcoamlbmohcaie?hl=en",
       tags: ["React", "TypeScript", "Tailwind"],
@@ -31,7 +31,7 @@ export default function Projects() {
     //   name: "Jeopardy Clone",
     //   description:
     //     "A web-based clone of the popular game show Jeopardy, created using only Vanilla JavaScript, HTML, and CSS. The questions and answers are stored in JSON files and are loaded dynamically using JavaScript.",
-    //   image: "/images/jeopardy.png",
+    //   image: "/images/jeopardy.webp",
     //   link: "https://github.com/YoussefRbahi/jeopardy",
     //   tags: ["HTML", "CSS", "JavaScript"],
     // },
@@ -39,7 +39,7 @@ export default function Projects() {
     //   name: "Hikma Education",
     //   description:
     //     "A website for Hikma Education, an agency that provides educational services in the Middle East. It uses Vue and Tailwind CSS for the frontend and Strapi for the Backend. The website is RTL-based but supports LTR and features a responsive design for different screen sizes.",
-    //   image: "/images/hikma-education.png",
+    //   image: "/images/hikma-education.webp",
     //   link: "https://hikmaeducation.netlify.app/",
     //   tags: ["Vue", "Tailwind", "Strapi"],
     // },
@@ -47,7 +47,7 @@ export default function Projects() {
       name: "rbahi.com",
       description:
         "Portfolio website built using React and Tailwind CSS. It features a very minimal design heavily inspired by the work of Brittany Chiang and Sean Halpin. The lockscreen is inspired by the iOS lockscreen (and by videogame cutscenes on desktop) and uses ipify and WeatherAPI to get the user's location and weather information.",
-      image: "/images/rbahi.png",
+      image: "/images/rbahi.webp",
       link: "https://rbahi.com",
       github: "https://github.com/YoussefRbahi/rbahi-com",
 
@@ -92,7 +92,7 @@ export default function Projects() {
                 {project.tags.map((tag, index) => (
                   <span
                     key={index}
-                    className="rounded-full px-2 py-1 text-xs font-semibold text-accent bg-accent bg-opacity-25"
+                    className="rounded-full px-2 py-1 text-xs font-semibold text-accent border border-accent lg:bg-accent lg:bg-opacity-25 lg:border-none"
                   >
                     {tag}
                   </span>
